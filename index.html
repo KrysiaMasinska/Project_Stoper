@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://kit.fontawesome.com/972c459d7e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <p class="info">
+            <i class="fas fa-paint-brush"></i>
+            <i class="fas fa-question"></i>
+        </p>
+        <h1>Stoper</h1>
+        <p class="timer">0:00</p>
+        <p class="timer_stop">0:00</p>
+        <main class="buttons">
+            <button class="paly"><i class="fas fa-play"></i></button>
+            <button class="pause"><i class="fas fa-pause"></i></button>
+            <button class="stop"><i class="fas fa-stop"></i></button>
+            <button class="close"><i class="fas fa-times"></i></button>
+            <button class="archive">Archiwum</button>
+        </main>
+
+        <ul class="timer_list">
+            <li>3:24</li>
+        </ul>
+    </div>
+
+    <div class="modal_shadow">
+        <div class="modal">
+            <h3>Instrukcja</h3>
+            <p><i class="fas fa-play"></i> - start</p>
+            <p><i class="fas fa-pause"></i> - pause</p>
+            <p><i class="fas fa-stop"></i> - stop</p>
+            <p><i class="fas fa-times"></i> - skasuj wszystko(archiwum włącznie)</p>
+            <p><strong>archiwum</strong> - zobacz wcześniejsze pomiary</p>
+            <button class="close">Zamknij</button>
+        </div>
+    </div>
+
+    <div class="modal_paint">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+
+</body>
+
+</html>
