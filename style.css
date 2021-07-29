@@ -202,6 +202,7 @@ h1 {
     width: 25px;
     height: 25px;
     border-radius: 50%;
+    outline: none;
     background-color: orangered;
     box-shadow: 0 0 10px rgb(255, 106, 52);
     transition: box-shadow .3s;
@@ -211,6 +212,7 @@ h1 {
     width: 25px;
     height: 25px;
     border-radius: 50%;
+    outline: none;
     background-color: rgb(31, 31, 167);
     box-shadow: 0 0 10px rgb(73, 73, 221);
     transition: box-shadow .3s;
@@ -220,18 +222,22 @@ h1 {
     width: 25px;
     height: 25px;
     border-radius: 50%;
+    outline: none;
     background-color: rgb(28, 131, 28);
     box-shadow: 0 0 10px rgb(56, 212, 56);
     transition: box-shadow .3s;
 }
 
-.modal_paint .one:hover{
+.modal_paint .one:hover,
+.modal_paint .one:focus{
     box-shadow: 0 0 15px 5px rgb(255, 106, 52);
 }
-.modal_paint .two:hover{
+.modal_paint .two:hover,
+.modal_paint .two:focus{
     box-shadow: 0 0 15px 5px rgb(73, 73, 221);
 }
-.modal_paint .three:hover{
+.modal_paint .three:hover,
+.modal_paint .three:focus{
     box-shadow: 0 0 15px 5px rgb(56, 212, 56);
 }
 
