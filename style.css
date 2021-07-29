@@ -6,7 +6,7 @@
 
 :root {
     --mainColor: orangered;
-    --secondColor: red;
+    --hoverColor: red;
 }
 
 
@@ -133,8 +133,20 @@ h1 {
     padding: 30px 60px;
     width: 600px;
     height: 400px;
-    background-color: #fff;
+    color:#fff;
+    background-color: #333;
     border-radius: 8px;
+}
+
+.modal .fa-play,
+.modal .fa-pause,
+.modal .fa-stop,
+.modal .fa-times{
+    color:var(--mainColor);
+}
+
+.modal strong{
+    color:var(--mainColor);
 }
 
 .modal h3 {
@@ -151,29 +163,34 @@ h1 {
 .modal .close {
     display: block;
     width: 200px;
+    padding: 8px 16px;
     margin: 20px auto 0;
+    font-size: 1.4em;
+    border: 1px solid var(--mainColor);
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
     background-color: var(--mainColor);
     transition: background-color .3s;
 }
 
 .modal .close:hover {
-    background-color: var(--secondColor);
+    background-color: var(--hoverColor);
 }
 
-.modal_paint {
+.paint {
     position: absolute;
     top: 50%;
     right: 0;
     display: flex;
     flex-direction: column;
     transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity .5s;
 }
 
-.modal_paint:hover {
-    opacity: 1;
+.modal_paint{
+    display: none;
 }
+
 
 .btn_paint {
     margin: 10px 0;
@@ -185,7 +202,9 @@ h1 {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: var(--mainColor);
+    background-color: orangered;
+    box-shadow: 0 0 10px rgb(255, 106, 52);
+    transition: box-shadow .3s;
 }
 
 .modal_paint .two {
@@ -193,6 +212,8 @@ h1 {
     height: 25px;
     border-radius: 50%;
     background-color: rgb(31, 31, 167);
+    box-shadow: 0 0 10px rgb(73, 73, 221);
+    transition: box-shadow .3s;
 }
 
 .modal_paint .three {
@@ -200,6 +221,18 @@ h1 {
     height: 25px;
     border-radius: 50%;
     background-color: rgb(28, 131, 28);
+    box-shadow: 0 0 10px rgb(56, 212, 56);
+    transition: box-shadow .3s;
+}
+
+.modal_paint .one:hover{
+    box-shadow: 0 0 15px 5px rgb(255, 106, 52);
+}
+.modal_paint .two:hover{
+    box-shadow: 0 0 15px 5px rgb(73, 73, 221);
+}
+.modal_paint .three:hover{
+    box-shadow: 0 0 15px 5px rgb(56, 212, 56);
 }
 
 .animation_modal {
