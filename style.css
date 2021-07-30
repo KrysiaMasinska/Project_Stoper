@@ -28,7 +28,7 @@ body {
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    width: 800px;
+    width: 750px;
     box-shadow: 5px 5px 10px #000;
     background-color: #222;
     border-radius: 8px;
@@ -80,7 +80,7 @@ h1 {
     margin: 10px;
     padding: 10px 20px;
     width: 20%;
-    font-size: 1.4em;
+    font-size: 16px;
     border: 1px solid var(--mainColor);
     color: #fff;
     background-color: transparent;
@@ -165,7 +165,7 @@ h1 {
     width: 200px;
     padding: 8px 16px;
     margin: 20px auto 0;
-    font-size: 1.4em;
+    font-size: 16px;
     border: 1px solid var(--mainColor);
     border-radius: 8px;
     color: #fff;
@@ -198,34 +198,29 @@ h1 {
     cursor: pointer;
 }
 
-.modal_paint .one {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    outline: none;
-    background-color: orangered;
-    box-shadow: 0 0 10px rgb(255, 106, 52);
-    transition: box-shadow .3s;
-}
-
-.modal_paint .two {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    outline: none;
-    background-color: rgb(31, 31, 167);
-    box-shadow: 0 0 10px rgb(73, 73, 221);
-    transition: box-shadow .3s;
-}
-
+.modal_paint .one,
+.modal_paint .two,
 .modal_paint .three {
     width: 25px;
     height: 25px;
     border-radius: 50%;
     outline: none;
+    transition: box-shadow .3s;
+}
+
+.modal_paint .one {
+    background-color: orangered;
+    box-shadow: 0 0 10px rgb(255, 106, 52);
+}
+
+.modal_paint .two {
+    background-color: rgb(31, 31, 167);
+    box-shadow: 0 0 10px rgb(73, 73, 221);
+}
+
+.modal_paint .three {
     background-color: rgb(28, 131, 28);
     box-shadow: 0 0 10px rgb(56, 212, 56);
-    transition: box-shadow .3s;
 }
 
 .modal_paint .one:hover,
@@ -253,4 +248,89 @@ h1 {
     to {
         opacity: 1;
     }
+}
+
+@media (max-width: 576px) {  
+    .wrapper {
+        padding: 10px;
+        width: 350px;
+    }
+
+    .info {
+        font-size: 14px;
+    }
+    
+    .fa-paint-brush,
+    .fa-question {
+        padding: 5px;
+    }
+    
+    h1 {
+        font-size: 34px;
+    }
+    
+    .timer {
+        font-size: 24px;
+    }
+    
+    .timer_stop {
+        font-size: 18px;
+    }
+
+    .buttons {
+        margin: 15px;
+    }
+    
+    .btn {
+        margin: 5px;
+        padding: 5px 10px;
+        width: 20%;
+        font-size: 14px;
+    }
+
+    .timer_list {
+        font-size: 14px;
+        width: 150px;
+    }
+
+    .timer_list li span {
+        margin-left: 50px;
+    }
+
+
+    .modal {
+        padding: 15px 30px;
+        width: 300px;
+        height: 200px;
+    }
+       
+    .modal h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .modal p {
+        margin-bottom: 10px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    
+    .modal .close {
+        width: 100px;
+        padding: 4px 8px;
+        margin: 10px auto 0;
+        font-size: 10px;
+    }
+    
+    .btn_paint {
+        margin: 10px 0;
+    }
+    
+    .modal_paint .one,
+    .modal_paint .two,
+    .modal_paint .three{
+        width: 15px;
+        height: 15px;
+    }
+    
 }

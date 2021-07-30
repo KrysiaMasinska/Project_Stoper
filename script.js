@@ -71,6 +71,7 @@ const clearStock = () => {
 }
 
 const showArchive = () => {
+    timerList.textContent = '';
     let number = 1;
     lastTime.forEach(time => {
         const newLi = document.createElement('li');
